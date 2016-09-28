@@ -19,7 +19,7 @@ to obtain hashtags from Instagram's official web site without requiring a login/
 * Replace {hashtag} with the hashtag you want to search for.
 E.g: 
 ```curl
-curl -X GET "http://localhost:9090/scrape/arroz"
+curl -X GET "http://localhost:8080/scrape/arroz"
 ```
 
 ### Hey, why the heck are you using PhantomJS?
