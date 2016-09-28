@@ -1,7 +1,7 @@
 
 # Motivation
-On 1st of June **Instagram** changed its policy so in order to searching for a hashtag as a third
-party provider requires to enter an Instagram login/pass. 
+On 1st of June **Instagram** changed its policy so in order to search for a hashtag as a third
+party provider the entry of an Instagram login/pass is required. 
 This policy change broke a few websites that used to consume that API directly from the client (browser).
 
 Since it's been a while since i've been wanting to do some web scraping using NodeJS, I decided to create this small API in order
