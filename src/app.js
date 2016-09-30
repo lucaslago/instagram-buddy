@@ -1,22 +1,14 @@
 const express = require('express');
-const cheerio = require('cheerio');
 const app = express();
-const grabInstagramImages = require('./phantom');
 const utils = require('./utils');
+const rp = require('request-promise');
+const parse = require('./parser');
 
 app.get('/scrape/:hashtag', (req, res) => {
-  grabInstagramImages(req.params.hashtag)
-    .then((content) => {
-      const $ = cheerio.load(content);
-      const imagesContainerObj = $('article img');
-      const response = Object.keys(imagesContainerObj)
-                         .filter(k => utils.hasAttributes(imagesContainerObj[k]))
-                         .map(k => utils.toImageJSON(imagesContainerObj[k]));
-      res.json(response);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  const url = `https://www.instagram.com/explore/tags/${req.params.hashtag}`;
+  rp(url)
+    .then(html => res.json(parse(html)))
+    .catch(err => console.log(err));
 });
 
 module.exports = app;

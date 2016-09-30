@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/lucaslago/instagram-buddy#readme",
   "dependencies": {
-    "cheerio": "^0.22.0",
     "express": "^4.14.0",
-    "phantom": "^2.1.21"
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
   }
 }
