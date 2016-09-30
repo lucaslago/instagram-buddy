@@ -1,6 +1,3 @@
 module.exports = {
-  hasAttributes: img => img.attribs !== undefined,
-  toImageJSON: img => {
-    return {src: img.attribs.src, text: img.attribs.alt};
-  }
+  extractTagData: sharedData => sharedData.entry_data.TagPage[0].tag
 }
