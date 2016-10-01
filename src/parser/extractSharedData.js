@@ -1,4 +1,4 @@
 const objDefinitionRegex = /\{(.*?)\;/;
+const removeSemicolon = string => string.substr(0, string.lastIndexOf(';'));
 
-module.exports = html => objDefinitionRegex.exec(html)[0];
-
+module.exports = html => removeSemicolon(objDefinitionRegex.exec(html)[0]);
