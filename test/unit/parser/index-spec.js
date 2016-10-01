@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const parse = require('../../src/parser');
+const parse = require('../../../src/parser');
 
 describe('Parser', () => {
   const expectedOutput = {testing: true};
