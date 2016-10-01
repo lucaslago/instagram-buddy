@@ -22,6 +22,3 @@ E.g:
 curl -X GET "http://localhost:8080/scrape/arroz"
 ```
 
-### Hey, why the heck are you using PhantomJS?
-Yeah... since instagram web site we are scraping uses ReactJS to build the HTML section that contains the hashtag images, we need to use a phantomjs 
-instance to compile the javascript that renders the full HTML and scrape that instead. That way, we can get all those fuzzy images with [cheerio](https://github.com/cheeriojs/cheerio).
