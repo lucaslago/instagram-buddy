@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha ./test/**/*.js",
-    "lint": "eslint ./src/**/*.js ./test/**/*.js"
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "mocha ./test/unit/**/*.js",
+    "test:integration": "mocha ./test/integration/**/*.js",
+    "lint": "eslint ./src/**/*.js ./test/**/*.js",
+    "ci": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.7.0",
-    "mocha": "^3.1.0"
+    "mocha": "^3.1.0",
+    "supertest": "^2.0.0"
   }
 }
