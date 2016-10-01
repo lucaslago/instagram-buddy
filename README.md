@@ -1,4 +1,4 @@
-
+![build status](https://travis-ci.org/lucaslago/instagram-buddy.svg?branch=master)
 # Motivation
 On 1st of June **Instagram** changed its policy so in order to search for a hashtag as a third
 party provider the entry of an Instagram login/pass is required. 
