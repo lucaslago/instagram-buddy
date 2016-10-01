@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha ./test/**/*.js"
+    "test": "mocha ./test/**/*.js",
+    "lint": "eslint ./src/**/*.js ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^3.7.0",
     "mocha": "^3.1.0"
   }
 }
