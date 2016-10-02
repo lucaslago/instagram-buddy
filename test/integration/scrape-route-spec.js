@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 const app = require('../../src/app');
 
 describe('GET /scrape/:hashtag', function() {
-  this.timeout(4000);
+  this.timeout(5000);
   it('respond with json', done => {
     supertest(app)
       .get('/scrape/testing')
