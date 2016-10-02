@@ -1,4 +1,6 @@
 ![build status](https://travis-ci.org/lucaslago/instagram-buddy.svg?branch=master)
+[![Codacy Badge Grade](https://api.codacy.com/project/badge/Grade/174249e5ba0a462883c11d7800c4d02a)](https://www.codacy.com/app/lucasbenderlago/instagram-buddy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucaslago/instagram-buddy&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge Coverage](https://api.codacy.com/project/badge/Coverage/174249e5ba0a462883c11d7800c4d02a)](https://www.codacy.com/app/lucasbenderlago/instagram-buddy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucaslago/instagram-buddy&amp;utm_campaign=Badge_Coverage)
 # Motivation
 On 1st of June **Instagram** changed its policy so in order to search for a hashtag as a third
 party provider the entry of an Instagram login/pass is required. 
