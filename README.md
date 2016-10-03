@@ -17,10 +17,10 @@ to obtain hashtags from Instagram's official web site without requiring a login/
 1. ```npm start```
 
 # API Reference
-```/GET scrapes/{hashtag}```
+```/GET /{hashtag}```
 * Replace {hashtag} with the hashtag you want to search for.
 E.g: 
 ```curl
-curl -X GET "http://localhost:8080/scrape/arroz"
+curl -X GET "http://localhost:8080/arroz"
 ```
 
