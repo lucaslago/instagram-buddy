@@ -9,7 +9,7 @@
     "test:unit": "mocha ./test/unit/**/*",
     "test:integration": "mocha ./test/integration/**/*",
     "lint": "eslint ./src/**/*.js ./test/**/*.js",
-    "coverage" : "istanbul cover _mocha --report lcovonly -- ./test/**/* && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage",
+    "coverage": "istanbul cover _mocha --report lcovonly -- ./test/**/* && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage",
     "ci": "npm run lint && npm run coverage"
   },
   "repository": {
@@ -30,7 +30,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.7.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.1.0",
+    "mocha-lcov-reporter": "^1.2.0",
     "supertest": "^2.0.0"
   }
 }
