@@ -2,11 +2,11 @@ const supertest = require('supertest');
 const expect = require('chai').expect;
 const app = require('../../src/app');
 
-describe('GET /scrape/:hashtag', function() {
+describe('GET /:hashtag', function() {
   this.timeout(5000);
   it('respond with json', done => {
     supertest(app)
-      .get('/scrape/testing')
+      .get('/testing')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200)
