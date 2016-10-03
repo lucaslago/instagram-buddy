@@ -10,7 +10,7 @@
     "test:integration": "mocha ./test/integration/**/*",
     "lint": "eslint ./src/**/*.js ./test/**/*.js",
     "coverage" : "istanbul cover _mocha --report lcovonly -- ./test/**/* && cat ./coverage/lcov.info | codacy-coverage && rm -rf ./coverage",
-    "ci": "npm run lint && npm run test"
+    "ci": "npm run lint && npm run coverage"
   },
   "repository": {
     "type": "git",
