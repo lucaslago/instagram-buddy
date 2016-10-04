@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/lucaslago/instagram-buddy#readme",
   "dependencies": {
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "pmx": "^0.6.8",
     "request": "^2.75.0",
