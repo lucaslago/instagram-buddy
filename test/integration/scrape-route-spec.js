@@ -46,7 +46,7 @@ describe('GET /:hashtag', function() {
     supertest(app)
       .get('/mamba')
       .expect(404)
-      .end((err, res) => {
+      .end((err) => {
         done(err);
       });
   });
